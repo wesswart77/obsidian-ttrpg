@@ -1,0 +1,110 @@
+/* TTRPG Campaign Manager */
+
+.ttrpg-container { padding: 16px; }
+
+.ttrpg-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+.ttrpg-header h2 { margin: 0; }
+
+.ttrpg-campaign-select {
+	width: 100%;
+	padding: 6px 10px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-primary);
+	color: var(--text-normal);
+	font-size: 0.9em;
+}
+
+.ttrpg-tabs {
+	display: flex;
+	gap: 4px;
+	margin-bottom: 12px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.ttrpg-tab {
+	padding: 6px 14px;
+	cursor: pointer;
+	border-radius: 4px 4px 0 0;
+	color: var(--text-muted);
+	font-size: 0.9em;
+	border: none;
+	background: transparent;
+}
+.ttrpg-tab.active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+.ttrpg-tab:hover:not(.active) {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.ttrpg-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.ttrpg-card {
+	padding: 10px 12px;
+	border-radius: 6px;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	cursor: pointer;
+}
+.ttrpg-card:hover { border-color: var(--interactive-accent); }
+
+.ttrpg-card-title {
+	font-weight: 600;
+	color: var(--text-accent);
+	margin-bottom: 4px;
+}
+.ttrpg-card-title:hover { text-decoration: underline; }
+
+.ttrpg-card-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin-top: 4px;
+}
+
+.ttrpg-badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: var(--tag-background);
+	color: var(--tag-color);
+	font-size: 0.78em;
+}
+
+.ttrpg-badge-role-ally { background: #2d6a2d44; color: #4caf50; }
+.ttrpg-badge-role-enemy { background: #6a2d2d44; color: #f44336; }
+.ttrpg-badge-role-boss { background: #6a2d2d66; color: #ff5722; }
+.ttrpg-badge-role-neutral { background: var(--tag-background); color: var(--tag-color); }
+.ttrpg-badge-status-active { background: #2d6a2d44; color: #4caf50; }
+.ttrpg-badge-status-complete { background: var(--tag-background); color: var(--tag-color); }
+.ttrpg-badge-status-failed { background: #6a2d2d44; color: #f44336; }
+
+.ttrpg-card-desc { color: var(--text-muted); font-size: 0.85em; margin-top: 4px; }
+.ttrpg-empty { color: var(--text-muted); font-style: italic; }
+
+.ttrpg-btn-primary {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	border: none;
+	border-radius: 4px;
+	padding: 5px 12px;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+.ttrpg-btn-primary:hover { background: var(--interactive-accent-hover); }
+
+.ttrpg-modal .setting-item { border-top: none; }
+.ttrpg-textarea { width: 100%; resize: vertical; }
