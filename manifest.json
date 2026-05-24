@@ -1,9 +1,9 @@
 {
   "id": "ttrpg-campaign-manager",
   "name": "TTRPG Campaign Manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.4.0",
-  "description": "Manage tabletop RPG campaigns in Obsidian: NPCs, locations, factions, session logs, quests, and loot.",
+  "description": "Manage tabletop RPG campaigns: NPCs, locations, factions, session logs, quests, and loot in plain markdown.",
   "author": "wesswart77",
   "authorUrl": "https://github.com/wesswart77",
   "fundingUrl": "https://www.buymeacoffee.com/wesswart77",
